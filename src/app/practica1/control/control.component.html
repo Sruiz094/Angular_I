@@ -1,0 +1,28 @@
+@if(seMuestra1){
+<ul>
+    <li *ngFor="let fruta of frutas">{{fruta}}</li> <!-- forma antigua de hacer un for en angular -->
+</ul>
+<br>
+<br> <!-- br se utiliza para agregar saltos de liena -->
+}
+
+@if(seMuestra2){
+    <ul>
+        @for(fruta of frutas; track $index){    <!-- forma moderna de hacer un for en angular -->
+            <li>{{fruta}}</li>
+        }
+    </ul>
+    
+}
+@if(seMuestra1){
+    <button (click)="prenderYApagar()">Ocultar el primer bloque</button>
+}@else {
+    <button (click)="prenderYApagar()">Mostrar el primer bloque</button>
+}
+
+@if(seMuestra2){
+    <button (click)="prenderYApagaV2()">Ocultar el segundo bloque</button>
+}@else {
+    <button (click)="prenderYApagaV2()">Mostrar el segundo bloque</button>
+}
+

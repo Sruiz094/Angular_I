@@ -1,0 +1,12 @@
+<h1>Hola {{nombre}}</h1>
+
+<div>
+    <input type="text" placeholder="Ingresa tu nombre" [(ngModel)]="nombre">
+    <button (click)="borrarNombre()">Borrar nombre</button>
+</div>
+
+<h1 *ngIf="nombre === 'Pedro'">Bienvenido Maestro</h1>
+
+@if(nombre=== 'Pedro'){
+<h1>No cerrar la clase</h1>
+}
