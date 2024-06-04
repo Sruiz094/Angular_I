@@ -10,3 +10,8 @@
 @if(nombre=== 'Pedro'){
 <h1>No cerrar la clase</h1>
 }
+
+<div>
+  <input type="text" placeholder="Ingresa un número" [(ngModel)]="numero" (ngModelChange)="verificarCapicua()">
+  <h2 *ngIf="esCapicua">El número {{numero}} es capicúa</h2>
+</div>

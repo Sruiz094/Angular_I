@@ -13,8 +13,8 @@ import { Component, DoCheck } from '@angular/core';
 export class ControlComponent implements DoCheck{
   contador = 0;
   ngDoCheck(): void {
-    this.contador ++
-    console.log("Hay cambios",this.contador)
+    this.contador ++;
+    console.log("Veces que se ejecuta el Do Check",this.contador)
   }
   seMuestra1 = true;
   seMuestra2 = true;
