@@ -16,8 +16,7 @@ import { Console } from 'console';
 })
 export class FormulariosComponent implements OnInit{
   @Input() nombre = '';
-esCapicua: any;
-numero: any;
+
   ngOnInit(): void {
     console.log("Formulario a sido inicializado")
   }
@@ -26,12 +25,5 @@ numero: any;
     this.nombre='';
   }
 
-  verificarCapicua() {
-    if (this.numero.length >= 2) {
-      const numeroReverso = this.numero.split('').reverse().join('');
-      this.esCapicua = this.numero === numeroReverso;
-    } else {
-      this.esCapicua = false;
-    }
-  }
+  
 }
