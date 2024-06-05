@@ -13,7 +13,7 @@ export const routes: Routes = [
         path: "taller1",
         component: CapicuaComponent,
     },
-    {   path: "",
+    {   path: "lista",
         component: ListaComponent,
     },
     {
