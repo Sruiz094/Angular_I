@@ -11,7 +11,9 @@
 <h1>No cerrar la clase</h1>
 }
 
+<h1>Verificar números capicúa</h1>
 <div>
   <input type="text" placeholder="Ingresa un número" [(ngModel)]="numero" (ngModelChange)="verificarCapicua()">
   <h2 *ngIf="esCapicua">El número {{numero}} es capicúa</h2>
+  <h2 *ngIf="esCapicua === false && numero.length >= 2">El número {{numero}} no es capicúa</h2>
 </div>
