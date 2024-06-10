@@ -6,9 +6,14 @@ import { CiclosVidaComponent } from './practica2/ciclos-vida/ciclos-vida.compone
 import { RickAndMortyService } from './services/rick-and-morty.service';
 import { ListaComponent } from './Practica3/lista/lista.component';
 import { CapicuaComponent } from './Taller1/capicua/capicua.component';
+import { ListaPersonajesComponent } from './Practica4/lista-personajes/lista-personajes.component';
+
 
 export const routes: Routes = [
-
+    {
+        path: "",
+        component: ListaPersonajesComponent,
+    },
     {
         path: "taller1",
         component: CapicuaComponent,

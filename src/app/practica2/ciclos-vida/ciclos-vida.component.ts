@@ -23,4 +23,9 @@ export class CiclosVidaComponent implements OnInit, DoCheck, OnDestroy{
     console.log("Entre al ngOnInit")
   }
 
+  OnEmit(mensaje: string){
+    window.alert('Mi hijo ha enviado esta información'+ mensaje)
+  }
+
+
 }

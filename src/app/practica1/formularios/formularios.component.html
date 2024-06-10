@@ -5,6 +5,10 @@
     <button (click)="borrarNombre()">Borrar nombre</button>
 </div>
 
+<div>
+  <button (click)="emisor.emit(nombre)">Emitir mensaje al padre</button>
+  </div>
+
 <h1 *ngIf="nombre === 'Pedro'">Bienvenido Maestro</h1>
 
 @if(nombre=== 'Pedro'){
